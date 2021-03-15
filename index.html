@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="player">
+      <div class="side-menu">
+      <a href="#" class="close side-menu"><i class="fa fa-angle-left"></i></a>
+      <ul>
+        <li><span class="side-search"><i class="fa fa-search fa-fw"></i>Search songs</span>
+        <div id="searchSongs">
+        </div>
+        </li>
+        <li><span  class="side-currently-playing"><i class="fa fa-headphones fa-fw"></i>Songs played</span>
+         <div id="nowPlay">
+         </div>
+        </li>
+        <li><span class="side-popular-music"><i class="fa fa-list-ol fa-fw"></i>Favourite Songs</span>
+         <div id="sideBarFav">
+         </div>
+        </li>
+        <li><span class="side-your-profile"><i class="fa fa-user fa-fw"></i>Explore more</span></li>
+        <li><span class="side-settings"> <a class="linkedin" href="https://www.linkedin.com/in/harsh-vardhan-552838171/"><i class="fa fa-cog fa-fw"></i>The developer</a> </span></li>
+      </ul>
+      <div class="side-menu-background"></div>
+      <div id="about">
+
+      </div>
+    </div>
+
+    <div class="user-menu">
+      <div class="close-icon">
+        <i class="fas fa-window-close"></i>
+      </div>
+      <div class="user-pic">
+        <i class="fas fa-users fa-7x"></i>
+      </div>
+      <div class="user-name">
+        <span>User</span>
+      </div>
+    </div>
+
+    <div  class="header">
+      <div  class="navi"><span id="navi_btn"><i class="fas fa-bars"></i></span></div>
+      <div  class="top">Musically</div>
+      <div  class="account"><span id="user"><i class="fas fa-user"></i></span></div>
+    </div>
+
+    <hr>
+
+    <div class="additionalDetails">
+      <div class="volume"><i class="fas fa-volume-up"></i>
+        <div id="volSlider"><input type="range" min=0 max=10 step=1 value=5 oninput="changeVol()"></div>
+      </div>
+      <div class="unfav"><i class="far fa-heart"></i></div>
+    </div>
+
+    <div class="image">
+      <div class="albumArt"><img src="images/Beats-craze.jpeg"></div>
+      <div class="ablumName">Crazy Born - Leave</div>
+      <div class="title">Beats-craze</div>
+    </div>
+
+    <div class="scrollBar">
+      <div class="currentTime"></div>
+      <div class="totalTime"></div>
+      <div id="scroll"><input type="range" min="0" max="1000" step="1" value=0 ></div>
+    </div>
+
+    <div class="btns">
+      <div class="shuffle"><i class="fas fa-random"></i></div>
+      <div class="back"><i class="fas fa-backward"></i></div>
+      <div class="play"><i class="fas fa-play-circle"></i></div>
+      <div class="next"><i class="fas fa-forward"></i></div>
+      <div class="repeat"><i class="fas fa-redo-alt"></i><span>1</span></div>
+    </div>
+
+    <hr>
+
+    <div class="queue">
+      <div  class="song" id="song_1"><span class="index">UpNext</span><span class="songName"></span><span class="duration"></span></span></div>
+      <hr>
+      <div  class="song" id="song_2"><span class="index">Next</span><span class="songName"></span><span class="duration"></span></span></div>
+      <hr>
+      <div class="song" id="song_3"><span class="index">Later</span><span class="songName"></span><span class="duration"></span></span></div>
+    </div>
+
+    </div>
+    <span class="copyright">Copyright <i class="fas fa-copyright"></i> <a class="linkedin" href="https://www.linkedin.com/in/harsh-vardhan-552838171/">Harsh</a> <a class="github" href="https://github.com/harsh-dn">Vardhan</a> 2020</span>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

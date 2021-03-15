@@ -1,0 +1,444 @@
+*, *:after, *:before
+{
+  box-sizing: border-box;
+}
+
+body{
+  background: #B53471;  /* fallback for old browsers */
+
+  animation-name: example;
+  animation-duration: 2s;
+  text-align: center;
+  color: #fff;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes example {
+  from {background-color: #B53471;}
+  to {background-color: #4B0082;}
+}
+.player{
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  filter: blur(50%);
+  height: 650px;
+  width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+div.side-menu {
+  box-sizing: border-box;
+  width: 24%;
+  height: 650px;
+  position: absolute;
+  background: #6F1E51;
+  z-index: 98;
+  margin-left: -310px;
+  text-align: left;
+}
+div.user-menu {
+  box-sizing: border-box;
+  width: 24%;
+  height: 200px;
+  position: absolute;
+  background: #8A2BE2;
+  z-index: 98;
+  margin-left: 1000px;
+  text-align: left;
+}
+.close-icon {
+  margin-top: 20px;
+  padding-left: 200px;
+}
+.user-pic {
+  position: relative;
+  margin-left: 48px;
+}
+.user-name {
+  position: relative;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+div.side-menu-background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-size: auto 100%;
+  opacity: .07;
+  z-index: 95;
+  font-size: 10px;
+}
+div.side-menu a.close {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  font-size: 25px;
+  color: #FFF;
+  z-index: 100;
+}
+div.side-menu ul {
+  margin: 50px 0 0 0;
+  z-index: 99 !important;
+  position: relative;
+}
+
+
+div.side-menu li {
+  color: #AAA;
+  padding: 10px 0 13px 5px;
+  z-index: 99;
+}
+
+div.side-menu li.active {
+  color: #FFF;
+}
+
+div.side-menu li span {
+  color: inherit;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  z-index: 100;
+}
+
+div.side-menu li span i {
+  margin-right: 7px;
+}
+div.side-menu li span:hover{
+  text-shadow: 0px 0px 2px rgb(255, 255, 255);
+  cursor: pointer;
+  color: #FFF;
+}
+#sideBarFav{
+  margin: 10px 10px 0px;
+  background-color: rgba(51, 51, 51, 0.959);
+  max-height: 150px;
+  overflow: auto;
+  height: 100%;
+}
+#sideBarFav div{
+  padding: 2px 2px 2px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100%;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+#sideBarFav div:hover{
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.699);
+  color: #FFF;
+}
+.search-song {
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid rgba(255,255,255,0.5);
+
+}
+#searchSongs {
+  padding-top: 10px;
+}
+#nowPlay{
+  margin: 10px 10px 0px;
+  background-color: rgba(51, 51, 51, 0.959);
+  max-height: 150px;
+  overflow: auto;
+  height: 100%;
+}
+#nowPlay div{
+  padding: 2px 2px 2px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100%;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+#nowPlay div:hover{
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.699);
+  color: #FFF;
+}
+#about{
+  position: relative;
+  margin: 10px 10px 0px;
+  background-color: #6F1E51;
+  top:42%;
+  padding: 2px 2px 2px 10px;
+  font-size: 10px;
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.header div{
+  position: absolute;
+  float:left;
+  top: 70%;
+  transform: translate(-50%,-50%);
+}
+.header span:hover{
+  text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.603);
+  cursor: pointer;
+}
+.header .top{
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem;
+  left: 50%;
+}
+.header .account{
+  left:93%;
+}
+.header .navi{
+  left: 8%;
+  z-index: 3;
+}
+.top{
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+  padding: 10px;
+}
+hr{
+  border: 0px;
+  height:2px;
+  background:rgba(255, 255, 255, 0.2);
+}
+.additionalDetails{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  padding: 10px 0px;
+}
+.additionalDetails div:hover{
+  text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.603);
+  cursor: pointer;
+}
+.additionalDetails .volume{
+  position: absolute;
+  left:8%;
+  transform: translate(-50%,-50%);
+}
+.additionalDetails .volume i{
+  display: block;
+}
+.additionalDetails #volSlider{
+  position: absolute;
+  left: 12%;
+  top:50%;
+  width: 0px;
+  transform: translate(30%,-85%);
+}
+.additionalDetails #volSlider input{
+  position:none;
+  width: 0px;
+  opacity: 0.9;
+  height: 1px;
+  margin: 0px 20px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline:none;
+  transition: width 0.5s;
+  transition-timing-function: ease;
+}
+.additionalDetails #volSlider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  display: none;
+  opacity: 1.0;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: rgb(255, 105, 237);
+  cursor: pointer;
+}
+.additionalDetails .volume:hover #volSlider input{
+  display: static;
+  width: 60px;
+}
+.additionalDetails .volume:hover #volSlider input::-webkit-slider-thumb {
+  display: block;
+}
+.additionalDetails .unfav{
+  position: absolute;
+  left:93%;
+  transform: translate(-50%,-50%);
+}
+.additionalDetails .fav{
+  position: absolute;
+  left:93%;
+  transform: translate(-50%,-50%);
+}
+.albumArt{
+  max-width: 200px;
+  height: 200px;
+  margin: 0px auto 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.albumArt img{
+  max-height: 200px;
+  width: auto;
+  border: 5px solid #F0FFF0;
+  box-sizing: border-box;
+  border-radius: 18px;
+}
+.ablumName{
+  text-align: center;
+  font-size: 25px;
+}
+.title{
+  text-align: center;
+  margin: 5px 0px 7px;
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+}
+.scrollBar{
+  width: 100%;
+}
+.scrollBar .currentTime, .totalTime{
+  display: inline-block;
+  font-size: 10px;
+  margin: 0px 150px;
+  padding: 2px 20px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 10px;
+  border-style: groove;
+}
+.scrollBar .currentTime{
+  float: left;
+}
+.scrollBar .totalTime{
+  float: right;
+}
+.scrollBar input{
+  width: 100%;
+  height: 1px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline:none;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+.scrollBar input:hover{
+  opacity: 1;
+}
+.scrollBar input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  opacity: 1.0;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 4px solid white;
+  border-radius: 50%;
+  background: purple;
+  cursor: pointer;
+}
+.scrollBar input::-moz-range-thumb {
+  opacity: 1.0;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 4px solid white;
+  border-radius: 50%;
+  background: rgb(255, 105, 237);
+  cursor: pointer;
+}
+.btns
+{ width: 100%;
+  margin: 20px 0px;
+  height: 30px;
+  position: relative;
+}
+.btns div{
+  float: left;
+  position: absolute;
+  font-size: 20px;
+  transform: translate(-50%,-50%);
+  top: 50%;
+}
+.btns div:hover{
+  text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.603);
+  cursor: pointer;
+}
+.btns .shuffle{
+  left:30%;
+}
+.btns .repeat{
+  left:70%;
+}
+.btns .repeat span{
+  display: none;
+  position: absolute;
+  font-size: 7px;
+  top: 30%;
+  left: 35%;
+  font-weight: bold;
+}
+.btns .play{
+  font-size: 35px;
+  left: 50%;
+}
+.btns .play{
+  display: inline-block;
+}
+.btns .back{
+  left: 40%;
+}
+.btns .next{
+  left: 60%;
+}
+.song{
+  height: 30px;
+  font-display: 'Roboto', sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+.song span{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  box-sizing: none;
+}
+.song .index{
+  left: 7%;
+  padding: 2px 5px;
+  font-size: 10px;
+  color: rgb(30, 255, 225);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.song .songName{
+  transform: translate(0%,-50%);
+  left: 18%;
+}
+.song .duration{
+  left: 90%;
+  padding: 1px 8px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.linkedin {
+  text-decoration: none;
+  color: #fff;
+}
+.github {
+  text-decoration: none;
+  color: #fff;
+}
+.copyright {
+  font-family: 'Roboto', sans-serif;
+}
